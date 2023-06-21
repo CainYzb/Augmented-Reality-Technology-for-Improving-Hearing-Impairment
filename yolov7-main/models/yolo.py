@@ -214,7 +214,8 @@ class IKeypoint(nn.Module):
     def __init__(self, nc=80, anchors=(), nkpt=17, ch=(), inplace=True, dw_conv_kpt=False):  # detection layer
         super(IKeypoint, self).__init__()
         self.nc = nc  # number of classes
-        self.nkpt = nkpt
+        self.nkpt = 17#fixed by cain
+        #print(self.nkpt,type(self.nkpt))
         self.dw_conv_kpt = dw_conv_kpt
         self.no_det=(nc + 5)  # number of outputs per anchor for box and class
         self.no_kpt = 3*self.nkpt ## number of outputs per anchor for keypoints
@@ -690,8 +691,6 @@ class Model(nn.Module):
     #         if type(m) is Bottleneck:
     #             print('%10.3g' % (m.w.detach().sigmoid() * 2))  # shortcut weights
 
-    #### @Cain commit for mobileOneNet  ####
-
     def fuse(self):  # fuse model Conv2d() + BatchNorm2d() layers
         print('Fusing layers... ')
         for m in self.model.modules():
@@ -701,10 +700,6 @@ class Model(nn.Module):
             elif isinstance(m, RepConv_OREPA):
                 #print(f" switch_to_deploy")
                 m.switch_to_deploy()
-            #====== commit part
-            elif isinstance(m, (MobileOne, MobileOneBlock)) and hasattr(m, 'reparameterize'):
-                m.reparameterize()
-            #=======
             elif type(m) is Conv and hasattr(m, 'bn'):
                 m.conv = fuse_conv_and_bn(m.conv, m.bn)  # update conv
                 delattr(m, 'bn')  # remove batchnorm
@@ -803,9 +798,6 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
             c2 = ch[f] * args[0] ** 2
         elif m is Expand:
             c2 = ch[f] // args[0] ** 2
-        elif m in [MobileOneBlock, MobileOne]:
-            c1, c2 = ch[f], args[0]
-            args = [c1, c2, *args[1:]]
         else:
             c2 = ch[f]
 
