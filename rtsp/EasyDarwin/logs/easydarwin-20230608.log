@@ -1,0 +1,503 @@
+[EasyDarwin] 2023/06/08 12:05:11 main.go:129: demon pull streams
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:349: <<<
+ANNOUNCE rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+CSeq: 1
+User-Agent: EasyPusher v2.0.19.0415
+Content-Type: application/sdp
+Content-Length: 543
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:425: audio codec[aac]
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:431: video codec[h264]
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 1
+Session: evrMFo_Vg
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=0 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+CSeq: 2
+User-Agent: EasyPusher v2.0.19.0415
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 2
+Session: evrMFo_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=1 RTSP/1.0
+Session: evrMFo_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+CSeq: 3
+User-Agent: EasyPusher v2.0.19.0415
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: evrMFo_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:349: <<<
+RECORD rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+Session: evrMFo_Vg
+Range: npt=0.000-
+CSeq: 4
+User-Agent: EasyPusher v2.0.19.0415
+
+[evrMFo_Vg]2023/06/08 12:05:28 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 4
+Session: evrMFo_Vg
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:349: <<<
+OPTIONS rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 1
+User-Agent: Lavf58.76.100
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 1
+Session: zDI4Kol4g
+Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:349: <<<
+DESCRIBE rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 2
+User-Agent: Lavf58.76.100
+Session: zDI4Kol4g
+Accept: application/sdp
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Content-Length: 543
+CSeq: 2
+Session: zDI4Kol4g
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=0 RTSP/1.0
+CSeq: 3
+User-Agent: Lavf58.76.100
+Session: zDI4Kol4g
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: zDI4Kol4g
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=1 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+CSeq: 4
+User-Agent: Lavf58.76.100
+Session: zDI4Kol4g
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+CSeq: 4
+Session: zDI4Kol4g
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:349: <<<
+PLAY rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+Range: npt=0.000-
+CSeq: 5
+User-Agent: Lavf58.76.100
+Session: zDI4Kol4g
+
+[zDI4Kol4g]2023/06/08 12:06:12 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 5
+Session: zDI4Kol4g
+Range: npt=0.000-
+
+[evrMFo_Vg]2023/06/08 12:06:12 pusher.go:293: session[player][TCP][/live.sdp][zDI4Kol4g] start, now player size[1]
+[evrMFo_Vg]2023/06/08 12:06:40 rtsp-session.go:188: session[pusher][TCP][/live.sdp][evrMFo_Vg] EOF
+[zDI4Kol4g]2023/06/08 12:06:40 rtsp-session.go:188: session[player][TCP][/live.sdp][zDI4Kol4g] read tcp 127.0.0.1:554->127.0.0.1:64986: use of closed network connection
+[EasyDarwin] 2023/06/08 12:07:03 main.go:59: http server end
+[EasyDarwin] 2023/06/08 16:40:34 main.go:129: demon pull streams
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:349: <<<
+ANNOUNCE rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+CSeq: 1
+User-Agent: EasyPusher v2.0.19.0415
+Content-Type: application/sdp
+Content-Length: 543
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:425: audio codec[aac]
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:431: video codec[h264]
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 1
+Session: V2xj_o_VR
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=0 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+CSeq: 2
+User-Agent: EasyPusher v2.0.19.0415
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 2
+Session: V2xj_o_VR
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=1 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+CSeq: 3
+User-Agent: EasyPusher v2.0.19.0415
+Session: V2xj_o_VR
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: V2xj_o_VR
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:349: <<<
+RECORD rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+Range: npt=0.000-
+CSeq: 4
+User-Agent: EasyPusher v2.0.19.0415
+Session: V2xj_o_VR
+
+[V2xj_o_VR]2023/06/08 16:41:06 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 4
+Session: V2xj_o_VR
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:349: <<<
+OPTIONS rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 1
+User-Agent: Lavf58.76.100
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 1
+Session: hbpq_olVg
+Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:349: <<<
+DESCRIBE rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 2
+User-Agent: Lavf58.76.100
+Session: hbpq_olVg
+Accept: application/sdp
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Session: hbpq_olVg
+Content-Length: 543
+CSeq: 2
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=0 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+CSeq: 3
+User-Agent: Lavf58.76.100
+Session: hbpq_olVg
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: hbpq_olVg
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=1 RTSP/1.0
+Session: hbpq_olVg
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+CSeq: 4
+User-Agent: Lavf58.76.100
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 4
+Session: hbpq_olVg
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:349: <<<
+PLAY rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+Range: npt=0.000-
+CSeq: 5
+User-Agent: Lavf58.76.100
+Session: hbpq_olVg
+
+[hbpq_olVg]2023/06/08 16:41:34 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 5
+Session: hbpq_olVg
+Range: npt=0.000-
+
+[V2xj_o_VR]2023/06/08 16:41:34 pusher.go:293: session[player][TCP][/live.sdp][hbpq_olVg] start, now player size[1]
+[hbpq_olVg]2023/06/08 16:42:04 rtsp-session.go:349: <<<
+OPTIONS rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 6
+User-Agent: Lavf58.76.100
+Session: hbpq_olVg
+
+[hbpq_olVg]2023/06/08 16:42:04 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 6
+Session: hbpq_olVg
+Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD
+
+[V2xj_o_VR]2023/06/08 16:42:19 rtsp-session.go:188: session[pusher][TCP][/live.sdp][V2xj_o_VR] EOF
+[hbpq_olVg]2023/06/08 16:42:19 rtsp-session.go:188: session[player][TCP][/live.sdp][hbpq_olVg] read tcp 127.0.0.1:554->127.0.0.1:50607: use of closed network connection
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:349: <<<
+ANNOUNCE rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+CSeq: 1
+User-Agent: EasyPusher v2.0.19.0415
+Content-Type: application/sdp
+Content-Length: 543
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:425: audio codec[aac]
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:431: video codec[h264]
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 1
+Session: sMORuT_Vg
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=0 RTSP/1.0
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+CSeq: 2
+User-Agent: EasyPusher v2.0.19.0415
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 2
+Session: sMORuT_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=0-1
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:349: <<<
+SETUP rtsp://192.168.245.221:554/live.sdp/streamid=1 RTSP/1.0
+CSeq: 3
+User-Agent: EasyPusher v2.0.19.0415
+Session: sMORuT_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:541: Parse SETUP req.TRANSPORT:TCP.Session.Type:0,control:rtsp://192.168.245.221:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: sMORuT_Vg
+Transport: RTP/AVP/TCP;unicast;mode=record;interleaved=2-3
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:349: <<<
+RECORD rtsp://192.168.245.221:554/live.sdp RTSP/1.0
+Range: npt=0.000-
+CSeq: 4
+User-Agent: EasyPusher v2.0.19.0415
+Session: sMORuT_Vg
+
+[sMORuT_Vg]2023/06/08 16:42:36 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 4
+Session: sMORuT_Vg
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:349: <<<
+OPTIONS rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 2
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD
+CSeq: 2
+Session: LTJRXT_4R
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:349: <<<
+DESCRIBE rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 3
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+Accept: application/sdp
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 3
+Session: LTJRXT_4R
+Content-Length: 543
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=EasyDarwin
+i=EasyDarwin
+c=IN IP4 127.0.0.1
+t=0 0
+a=x-qt-text-nam:EasyDarwin
+a=x-qt-text-inf:EasyDarwin
+a=x-qt-text-cmt:source application::EasyDarwin
+a=x-qt-text-aut: 
+a=x-qt-text-cpy: 
+m=video 0 RTP/AVP 96
+a=rtpmap:96 H264/90000
+a=fmtp:96 packetization-mode=1;sprop-parameter-sets=
+a=control:streamid=0
+m=audio 0 RTP/AVP 97
+a=rtpmap:97 MPEG4-GENERIC/8000/1
+a=fmtp:97 streamtype=5;profile-level-id=1;mode=AAC-hbr;sizelength=13;indexlength=3;indexdeltalength=3;config=1588
+a=control:streamid=1
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=0 RTSP/1.0
+Transport: RTP/AVP;unicast;client_port=54742-54743
+CSeq: 4
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:556: Parse SETUP req.TRANSPORT:UDP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=0, AControl:streamid=1,VControl:streamid=0
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Transport: RTP/AVP;unicast;client_port=54742-54743
+CSeq: 4
+Session: LTJRXT_4R
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:349: <<<
+SETUP rtsp://127.0.0.1:554/live.sdp/streamid=1 RTSP/1.0
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+Transport: RTP/AVP;unicast;client_port=54746-54747
+Session: LTJRXT_4R
+CSeq: 5
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:556: Parse SETUP req.TRANSPORT:UDP.Session.Type:1,control:rtsp://127.0.0.1:554/live.sdp/streamid=1, AControl:streamid=1,VControl:streamid=0
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+Session: LTJRXT_4R
+Transport: RTP/AVP;unicast;client_port=54746-54747
+CSeq: 5
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:349: <<<
+PLAY rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+Session: LTJRXT_4R
+Range: npt=0.000-
+CSeq: 6
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+
+[LTJRXT_4R]2023/06/08 16:42:43 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 6
+Session: LTJRXT_4R
+Range: npt=0.000-
+
+[sMORuT_Vg]2023/06/08 16:42:43 pusher.go:293: session[player][UDP][/live.sdp][LTJRXT_4R] start, now player size[1]
+[LTJRXT_4R]2023/06/08 16:42:55 rtsp-session.go:349: <<<
+TEARDOWN rtsp://127.0.0.1:554/live.sdp RTSP/1.0
+CSeq: 7
+User-Agent: LibVLC/3.0.18 (LIVE555 Streaming Media v2016.11.28)
+Session: LTJRXT_4R
+
+[LTJRXT_4R]2023/06/08 16:42:55 rtsp-session.go:356: >>>
+RTSP/1.0 200 OK
+CSeq: 7
+Session: LTJRXT_4R
+
+[sMORuT_Vg]2023/06/08 16:42:55 pusher.go:307: session[player][UDP][/live.sdp][LTJRXT_4R] end, now player size[0]
+[sMORuT_Vg]2023/06/08 16:42:56 rtsp-session.go:188: session[pusher][TCP][/live.sdp][sMORuT_Vg] EOF
+[EasyDarwin] 2023/06/08 17:33:04 main.go:59: http server end
+[EasyDarwin] 2023/06/08 17:33:04 main.go:79: rtsp server end
